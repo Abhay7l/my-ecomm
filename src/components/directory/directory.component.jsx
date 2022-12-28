@@ -8,7 +8,14 @@ const Directory = ({ categories }) =>{
   {categories.map((category)=>(
     <CategoryItem key={category.id} category={category} />
     ))}
-  </div>
+  {/* background animation */}
+    {/* <div class='box'>
+  <div class='wave -one'></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+</div> */}
+        </div>
+  
  );
 };
 export default Directory;

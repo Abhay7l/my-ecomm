@@ -9,12 +9,14 @@ const Shop=()=>{
 };
 const App=()=>{
   return(
+ 
   <Routes>
     <Route path="/" element={<Navigation/>}>
     <Route path="/" element={<Home/>}/>
     <Route path="/shop" element={<Shop/>}/>
     <Route path="/auth" element={<Authentication/>}/>
     <Route path="/sign-up" element={<SignUpForm/>}/>
+    
     </Route>
   </Routes>
   );

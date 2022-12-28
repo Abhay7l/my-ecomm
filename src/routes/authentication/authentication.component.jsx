@@ -7,13 +7,20 @@ import { Fragment } from "react";
 const Authentication=()=>{
 
     return (
+
         <div className="container">
-    {/* <button onClick={logGoogleUser}>SIGN IN</button> */}
-    {/* <button onClick={logGoogleUser}buttonType="google">Sign In With Google</button> */}
-    {/* <div className="sign"> */}
     <SignInForm className="sign"/>
     <SignUpForm className="sisgn"/>
+    {/* background animation */}
+           {/* <div class='box'>
+  <div class='wave -one'></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+</div> */}
         </div>
     )
 }
 export default Authentication;
+{/* <button onClick={logGoogleUser}>SIGN IN</button> */}
+{/* <button onClick={logGoogleUser}buttonType="google">Sign In With Google</button> */}
+{/* <div className="sign"> */}

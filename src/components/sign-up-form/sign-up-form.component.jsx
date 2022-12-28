@@ -1,8 +1,14 @@
-import { useState } from "react";
+//context helps us to store the data which our entire application needs to keep track of;
+
+import {  useState } from "react";
+
 import FormInput from "../form-input/form-input.component";
-import { createAuthUserWithEmailAndPassword,createUserDocumentFromAuth } from "../../utils/firebase/firebase.utils";
-import "./sign-up-from.styles.scss"
 import Button from "../button/button.component";
+import { 
+  createAuthUserWithEmailAndPassword,
+  createUserDocumentFromAuth } from "../../utils/firebase/firebase.utils";
+import "./sign-up-from.styles.scss"
+// import { UserContext } from "../../contexts/user.context";
 const defaultFormFields={
   displayName:'',
   email:'',
@@ -12,7 +18,9 @@ const defaultFormFields={
 const SignUpForm = () => {
   const [formFields,setFormFields] = useState(defaultFormFields);
   const {displayName,email,password,confirmPassword}=formFields;
-  // console.log(formFields);
+  
+  // const {setCurrentUser}=useContext(UserContext);
+
   const resetFormFields =() => {
     setFormFields(defaultFormFields);
   }
@@ -20,12 +28,13 @@ const SignUpForm = () => {
 const handleSubmit = async (event) =>{//on submiting we have to check if password and confirm password are same also we have to see if we have authenticated the user with email and password and then we have to create user document from what the function returns;
   event.preventDefault();//by this we specifies that all the changes happening in the form we are going to handle it there should be no default changes;
   if(password  !== confirmPassword){
-    alert("passwords do not match")
+    alert("passwords do not match");
     return;
   }
   try{
-    const {user} =await createAuthUserWithEmailAndPassword(email,password);;
+    const {user} = await createAuthUserWithEmailAndPassword(email,password);
     // console.log(,user);
+    // setCurrentUser(user);
     await createUserDocumentFromAuth(user,{displayName});
     resetFormFields();
     // createAuthUserWithEmailAndPassword(user,{displayName});
