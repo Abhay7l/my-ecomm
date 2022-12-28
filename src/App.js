@@ -4,9 +4,11 @@ import "./App.css"
 import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
 import SignUpForm from "./components/sign-up-form/sign-up-form.component";
-const Shop=()=>{
-  return <h1>SHOP</h1>;
-};
+import Shop from "./routes/shop/shop.component";
+// const Shop=()=>{
+  <Shop></Shop>
+//   return <h1>SHOP</h1>;
+// };
 const App=()=>{
   return(
  
