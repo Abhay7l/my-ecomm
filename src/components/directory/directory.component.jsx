@@ -8,7 +8,7 @@ const Directory = ({ categories }) =>{
   {categories.map((category)=>(
     <CategoryItem key={category.id} category={category} />
     ))}
-  {/* background animation */}
+  {/* background animation *s/}
     {/* <div class='box'>
   <div class='wave -one'></div>
   <div class='wave -two'></div>
