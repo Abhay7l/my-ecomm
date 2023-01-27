@@ -1,4 +1,4 @@
-// //watch lecture 113 to understan the basic structure of context;
+// //watch lecture 113 to understand the basic structure of context;
 // import { createContext ,useState,useEffect} from "react";
 // // import { adddCollectionAndDocuments } from "../utils/firebase/firebase.utils";
 // import { getCategoriesAndDocuments } from "../utils/firebase/firebase.utils";

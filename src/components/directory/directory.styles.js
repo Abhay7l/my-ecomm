@@ -1,12 +1,14 @@
-.directory-container {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // background-color: black;
-    // background-color: rgb(27, 25, 25);
-  }
+import styled from "styled-components";
+
+export const DirectoryContainer = styled.div`
+width: 100%;
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+`;
+
 
   //background animation
   // body{

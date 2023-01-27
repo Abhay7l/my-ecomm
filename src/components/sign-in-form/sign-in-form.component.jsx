@@ -3,7 +3,7 @@ import FormInput from "../form-input/form-input.component";
 // import { useState,useContext } from "react";
 
 import "./sign-in-from.styles.scss"
-import Button from "../button/button.component";
+import Button , {BUTTON_TYPE_CLASSES} from "../button/button.component";
 
 // import { UserContext } from "../../contexts/user.context";
 
@@ -87,7 +87,7 @@ const handleSubmit = async (event) =>{//on submiting we have to check if passwor
         />
         <div className="buttons-container">
       <Button  type = "submit">SIGN IN</Button>
-      <Button type ='button'buttonType='google'onClick={SignInWtihGoogle}>GOOGLE SIGNIN</Button>
+      <Button type ='button'buttonType={BUTTON_TYPE_CLASSES.google} onClick={SignInWtihGoogle}>GOOGLE SIGNIN</Button>
         </div>
       {/* when the button is clicked it tells to run the onSubmit callback and the onSubmit callback runs only if all the required validations are filled;*/}
     </form>

@@ -148,15 +148,6 @@ const firebaseConfig = {
   messagingSenderId: "524805465360",
   appId: "1:524805465360:web:7b1d9ea3e26a7c0f15f195"
 }
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-//   authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-//   projectId: 'crwn-clothing-db-98d4d',
-//   storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-//   messagingSenderId: '626766232035',
-//   appId: '1:626766232035:web:506621582dab103a4d08d6',
-// };
-
 const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
@@ -189,10 +180,10 @@ export const addCollectionAndDocuments = async (
 };
 
 export const getCategoriesAndDocuments = async () => {
-  const collectionRef = collection(db, 'categories');
+  const collectionRef = collection(db, 'categories');//this will return the reference of the collection with the specified collection key (collectionKey in this)
   const q = query(collectionRef);
   
-  const querySnapshot = await getDocs(q);
+  const querySnapshot = await getDocs(q);//snapshots are used to get the docs of a particular collection
   const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
     const { title, items } = docSnapshot.data();
     acc[title.toLowerCase()] = items;
