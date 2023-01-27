@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
+export const Heading = styled.h1`
+  text-transform:uppercase;
+  text-align:center;
+`
+
 export const DirectoryContainer = styled.div`
 width: 100%;
-padding: 10px;
+padding: 30px 0px;
 display: flex;
+height:92vh;
 flex-wrap: wrap;
 justify-content: space-between;
 

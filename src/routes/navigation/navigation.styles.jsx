@@ -39,12 +39,15 @@ import { Link } from 'react-router-dom';
 
 export const NavigationContainer = styled.div`
  width: 100%;
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     ${'' /* // margin-bottom: 25px; */}
     ${'' /* // background-color: rgb(67, 66, 66); */}
-    background-color: white;
+    ${'' /* background-color: white; */}
+    margin-bottom:0px;
+    ${'' /* background-color: rgb(67, 66, 66); */}
+    z-index:-1;
     font-weight: 500;
 `;
 

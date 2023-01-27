@@ -1,7 +1,7 @@
 
 // import CategoryItem from "../category-item/category-item.component";
 import DirectoryItem from "../directory-item/directory-item.component";
-import { DirectoryContainer } from "./directory.styles";
+import { DirectoryContainer,Heading} from "./directory.styles";
 
 // to add routing to the directory categories we modify our our array with routes
 const categories=[
@@ -38,12 +38,14 @@ const categories=[
 ];
 const Directory = () =>{
  return(
+  <>
+    <Heading>My Clothing Collection</Heading>
     <DirectoryContainer>
   {categories.map((category)=>(
     <DirectoryItem key={category.id} category={category} />
     ))}
         </DirectoryContainer>
-  
+        </>
  );
 };
 export default Directory;

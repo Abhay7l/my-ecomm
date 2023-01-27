@@ -12,6 +12,7 @@
       height: 95%;
       object-fit: cover;
       margin-bottom: 5px;
+      border: 2px solid black;
     }
   
     button {
@@ -38,8 +39,8 @@
       height: 5%;
       display: flex;
       justify-content: space-between;
-      font-size: 18px;
-  
+      font-size: 25px;
+      font-weight: 400;
       .name {
         width: 90%;
         margin-bottom: 15px;
