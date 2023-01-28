@@ -1,7 +1,7 @@
 import styled, {css} from "styled-components";
 
 const subColor = 'grey';
-const mainColor = 'black';
+const mainColor = 'white';
 
 const shrinkLabelStyles = css`
      top: -14px;
@@ -27,7 +27,7 @@ ${'' /* if shrink class is activated than it will also have the styles of shrink
 
 export const Input = styled.input`
 background: none;
-    background-color: white;
+    opacity:0.3;
     color: ${subColor};
     font-size: 18px;
     padding: 10px 10px 10px 5px;

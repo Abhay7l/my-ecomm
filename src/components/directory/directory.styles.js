@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const Heading = styled.h1`
   text-transform:uppercase;
   text-align:center;
+  color:white;
 `
 
 export const DirectoryContainer = styled.div`
 width: 100%;
 padding: 30px 0px;
+border:1px solid white;
 display: flex;
 height:92vh;
 flex-wrap: wrap;
