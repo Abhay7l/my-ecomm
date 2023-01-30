@@ -1,19 +1,33 @@
-.sign-up-container{
+// .sign-up-container{
+//     display: flex;
+//     flex-direction: column;
+//     width: 380px;
+//     color: white;
+//     // left: 50%;
+//     // transform: translate(-50%);
+//     h2{
+//         margin: 10px 0;
+//         font-size: 30px;
+//         font-weight: 500;
+//     }
+
+//     .buttons-container{
+//         display: flex;
+//         // margin: 5px;
+//         justify-content: space-between;
+//     }
+// }
+.sign-in-container {
     display: flex;
     flex-direction: column;
     width: 380px;
-    color: white;
-    // left: 50%;
-    // transform: translate(-50%);
-    h2{
-        margin: 10px 0;
-        font-size: 30px;
-        font-weight: 500;
+  
+    h2 {
+      margin: 10px 0;
     }
-
-    .buttons-container{
-        display: flex;
-        // margin: 5px;
-        justify-content: space-between;
+  
+    .buttons-container {
+      display: flex;
+      justify-content: space-between;
     }
-}
+  }

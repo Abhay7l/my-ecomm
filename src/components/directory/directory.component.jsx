@@ -1,8 +1,8 @@
 
 // import CategoryItem from "../category-item/category-item.component";
 import DirectoryItem from "../directory-item/directory-item.component";
-import { DirectoryContainer,Heading} from "./directory.styles";
-
+// import { DirectoryContainer} from "./directory.styles";
+import './directory.styles.scss'
 // to add routing to the directory categories we modify our our array with routes
 const categories=[
   {
@@ -38,14 +38,11 @@ const categories=[
 ];
 const Directory = () =>{
  return(
-  <>
-    <Heading>My Clothing Collection</Heading>
-    <DirectoryContainer>
+    <div className="directory-container">
   {categories.map((category)=>(
     <DirectoryItem key={category.id} category={category} />
     ))}
-        </DirectoryContainer>
-        </>
+        </div>
  );
 };
 export default Directory;

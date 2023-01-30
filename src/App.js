@@ -1,11 +1,12 @@
 import Home from "./routes/home/home.component"
 import {Routes,Route} from "react-router-dom"
-import "./App.css"
+// import "./App.css"
 import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
 import SignUpForm from "./components/sign-up-form/sign-up-form.component";
 import Shop from "./routes/shop/shop.component";
 import Checkout from "./routes/checkout/checkout.component";
+import { GlobalStyle } from "./global.styles";
 // const Shop=()=>{
   // <Shop></Shop>
 //   return <h1>SHOP</h1>;
@@ -13,8 +14,9 @@ import Checkout from "./routes/checkout/checkout.component";
 const App=()=>{
   
   return(
- 
-  <Routes>
+  <> 
+  <GlobalStyle/>
+   <Routes>
     <Route path="/" element={<Navigation/>}>
     <Route index element={<Home/>}/>
     <Route path="/shop/*" element={<Shop/>}/> 
@@ -24,6 +26,8 @@ const App=()=>{
     <Route path="/checkout" element={<Checkout/>}/>
     </Route>
   </Routes>
+  </>
+
   );
 }
 

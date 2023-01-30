@@ -3,12 +3,10 @@
 //     left: 50%;
 //     transform: translate(-50%);
 // }
-.container{
+.authentication-container {
     display: flex;
-    color: black;
-    width: 950px;
-    // background-color: white;
-    justify-content: space-around;
-    margin: 95px 400px;
-}
+    width: 900px;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
 //background animation

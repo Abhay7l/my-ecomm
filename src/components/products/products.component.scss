@@ -9,10 +9,16 @@
   
     img {
       width: 100%;
-      height: 90%;
+      height: 100%;
       object-fit: cover;
       margin-bottom: 5px;
       border: 2px solid black;
+
+      @media screen and (max-width:800px){
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+      }
     }
   
     button {
@@ -21,6 +27,16 @@
       position: absolute;
       top: 255px;
       display: none;
+
+      @media screen and (max-width: 800px){
+        display: block;
+        opacity: 0.9;
+        min-width: unset;
+        padding: 0 10px;
+        top:170px;
+        // background-color: white;
+        // color: black;;
+      }
     }
   
     &:hover {
@@ -33,14 +49,27 @@
         display: flex;
       }
     }
+  @media screen and (max-width:800px){
+    width: 40vw;
+    &:hover {
+      img {
+        opacity: unset;
+        width: 100%;
+        height: 90%;
+      }
   
+      button {
+        opacity: unset;
+      }
+    }
+  }
     .footer {
       width: 100%;
       height: 5%;
       display: flex;
-      color: white;
+      // color: white;
       justify-content: space-between;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       .name {
         width: 90%;
@@ -48,7 +77,8 @@
       }
   
       .price {
-        width: 10%;
+        // width: 10%;
+        text-align: right;
       }
     }
   }

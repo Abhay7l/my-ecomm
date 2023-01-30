@@ -8,7 +8,7 @@ import Button , {BUTTON_TYPE_CLASSES} from "../button/button.component";
 // import { UserContext } from "../../contexts/user.context";
 
 import {signInWithGooglePopup,
-  createUserDocumentFromAuth,
+  // createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 
 
@@ -64,7 +64,7 @@ const handleSubmit = async (event) =>{//on submiting we have to check if passwor
      setFormFields({ ...formFields,[name]:value});
   };
    return(
-    <div className="sign-up-container">
+    <div className="sign-in-container">
      <h2>Already have an account</h2>
      <span>Sign in with your email and password</span>
      <form onSubmit={handleSubmit}>   

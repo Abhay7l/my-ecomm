@@ -1,7 +1,7 @@
 import styled, {css} from "styled-components";
 
 const subColor = 'grey';
-const mainColor = 'white';
+const mainColor = 'black';
 
 const shrinkLabelStyles = css`
      top: -14px;
@@ -40,8 +40,8 @@ background: none;
 
     &:focus {
       outline: none;
-      background-color: rgb(248, 243, 243);
-      // color: white;
+      ${'' /* background-color: rgb(248, 243, 243); */}
+      ${'' /* // color: white; */}
     }
     &:focus ~ ${FormInputLabel} {
       ${'' /* @include shrinkLabel(); */}
